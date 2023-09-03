@@ -25,7 +25,10 @@ body {
     align-items: center;
     height: 100vh;
 
-    padding: 2rem;
+    padding: 2rem;  
+    border: 1px solid black;  
+    border-radius: 3rem;
+    box-shadow: 2px 2px 5px black;
 }
 
 #title {
@@ -62,8 +65,12 @@ body {
 #input {
     font-size: 1.8rem;
     padding: 1rem;
-    background-color: darkslateblue;
+    background-color: burlywood;
     border-radius: 1rem;
+}
+
+input::placeholder {
+    color: black;
 }
 
 .button {
@@ -83,5 +90,9 @@ body {
 .footerNameJob {
     text-align: center;
     font-size: 1.2rem;
+}
+
+.footerNameJob a {
+    color: black;
 }
 
