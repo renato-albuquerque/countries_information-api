@@ -20,12 +20,14 @@
         
         <div class="wrapInputButton">
             <input id="input" type="text" placeholder="Type the Country">
-            <button class="button">
+            <button class="button" onclick="searchCountry()">
                 <i class="fa-solid fa-magnifying-glass fa-fade"></i>
             </button>
         </div>
         
         <div id="loading">Loading...</div>
+
+        <button class="buttonNewSearch" onclick="window.location.reload()">New Search</button>
 
         <footer class="footer">
             <p class="footerNameJob">Developed by <a href="https://rma-contacts.vercel.app/">Renato Albuquerque</a></p>

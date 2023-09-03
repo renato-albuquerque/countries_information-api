@@ -23,7 +23,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: 4rem;
 
     padding: 2rem;  
     border: 1px solid black;  
@@ -54,18 +55,13 @@ body {
 .wrapInputButton {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 6rem;
-}
-
-.label {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 #input {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 1rem;
-    background-color: burlywood;
+    background-color: steelblue;
     border-radius: 1rem;
 }
 
@@ -76,6 +72,7 @@ input::placeholder {
 .button {
     padding: 1rem;
     border-radius: 1rem;
+    font-size: 1.6rem;
 }
 
 .fa-magnifying-glass {
@@ -83,8 +80,20 @@ input::placeholder {
 }
 
 #loading {
-    margin-bottom: 12rem;
+    margin-bottom: 3rem;
     font-size: 1.8rem;
+    line-height: 3rem;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 30rem;
+}
+
+.buttonNewSearch {
+    margin-bottom: 6rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
 }
 
 .footerNameJob {
