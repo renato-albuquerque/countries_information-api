@@ -13,6 +13,7 @@
 
 body {
     font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
 
     width: 37.5rem;
     margin: 0 auto;
@@ -30,17 +31,39 @@ body {
     border: 1px solid black;  
     border-radius: 3rem;
     box-shadow: 2px 2px 5px black;
+    
+    position: relative;
 }
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(https://images.pexels.com/photos/6638398/pexels-photo-6638398.jpeg?auto=compress&cs=tinysrgb&w=600);
+    
+    background-size: cover;
+    z-index: -1;
+    border-radius: 3rem;
+    opacity: 30%;
+}
+
 
 #title {
     margin-bottom: 2rem;
-    font-size: 3.2rem;
+    font-size: 3rem;
+    background-color: #273142;
+    color: whitesmoke;
+    
+    padding: 1rem 0.7rem;
+    border-radius: 1rem;
 }
 
 #subtitle {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
+    color: #273142;
 }
 
 #source {
@@ -49,7 +72,8 @@ body {
 
 #source a {
     font-size: 1.6rem;
-    color: black;
+    color: #273142;
+    font-weight: bold;
 }
 
 .wrapInputButton {
@@ -61,22 +85,24 @@ body {
 #input {
     font-size: 1.6rem;
     padding: 1rem;
-    background-color: steelblue;
+    background-color: #e4a691;
     border-radius: 1rem;
 }
 
 input::placeholder {
-    color: black;
+    color: #273142;
 }
 
 .button {
     padding: 1rem;
     border-radius: 1rem;
     font-size: 1.6rem;
+    background-color: #556270;
 }
 
 .fa-magnifying-glass {
     width: 6rem; 
+    color: whitesmoke;
 }
 
 #loading {
@@ -87,6 +113,8 @@ input::placeholder {
     border-radius: 1rem;
     padding: 2rem;
     width: 30rem;
+    background-color: #f7efd8;
+    color: #273142;
 }
 
 .buttonNewSearch {
@@ -94,14 +122,19 @@ input::placeholder {
     padding: 1rem;
     border-radius: 1rem;
     font-size: 1.6rem;
+    background-color: #556270;
+    color: whitesmoke;
 }
 
 .footerNameJob {
     text-align: center;
     font-size: 1.2rem;
+    color: #556270;
+    font-weight: bold;
 }
 
 .footerNameJob a {
-    color: black;
+    color: #273142;
+    font-weight: bold;
 }
 
