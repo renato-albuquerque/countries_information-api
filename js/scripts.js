@@ -29,15 +29,13 @@ function showCountryInformation(data) {
         loading.innerHTML = `<p># Name: ${data.name}</p>
                         <p># Population: ${data.population}</p>
                         <p># Capital: ${data.capital}</p>
-                        <p># Continent: ${data.region}</p>
+                        <p># Region: ${data.region}</p>
                         <p># Continent: ${data.continents}</p>
                         <p># Currency: ${data.currencies}</p>
                         <p># Language: ${data.languages}</p>
                         <p># Borders: ${data.borders}</p>
-                        <p># Gini index: ${data.gini}</p>
-                        `
-    }
-    
+                        <p># Gini index: ${data.gini}</p>`                       
+    }  
 }
 
 
