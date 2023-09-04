@@ -107,8 +107,8 @@ input::placeholder {
 
 #loading {
     margin-bottom: 3rem;
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
     box-shadow: 2px 2px 5px black;
     border-radius: 1rem;
     padding: 2rem;

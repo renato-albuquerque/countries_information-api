@@ -23,15 +23,16 @@ function showCountryInformation(data) {
     const loading = document.querySelector("#loading")
     
     loading.innerHTML = 
-        `<p># Name: ${data[0].name.common}</p>
-        <p># Population: ${data[0].population.toLocaleString('pt-BR')}</p>
+        `<p># Name: ${data[0].name.common} / ${data[0].fifa}</p>
+        <p># Population: ${data[0].population.toLocaleString('pt-BR')} people</p>
+        <p># Area: ${data[0].area.toLocaleString('pt-BR')} km²</p>
         <p># Capital: ${data[0].capital}</p>
         <p># Region: ${data[0].region}</p>
         <p># Continent: ${data[0].continents}</p>
-        <p># Currency: ${data.currencies}</p>
-        <p># Language: ${data.languages}</p>
-        <p># Borders: ${data[0].borders}</p>
-        <p># Gini index: ${data.gini}</p>`
+        <p># Currency: ${JSON.stringify(data[0].currencies, null, 2)}</p>
+        <p># Language: ${JSON.stringify(data[0].languages, null, 2)}</p>    
+        <p># Borders: ${JSON.stringify(data[0].borders, null, 2)}</p>
+        <p># Gini index: ${JSON.stringify(data[0].gini, null, 2)}</p>` 
 }  
     
 
