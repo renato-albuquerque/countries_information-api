@@ -22,20 +22,24 @@ async function searchCountry() {
 function showCountryInformation(data) {
     const loading = document.querySelector("#loading")
     
-    if(data.error) {
-        loading.innerText = "Country not found. Please make sure the country name is written in English."
-        loading.style.color = "red"
-    } else {
-        loading.innerHTML = `<p># Name: ${data.name}</p>
-                        <p># Population: ${data.population}</p>
-                        <p># Capital: ${data.capital}</p>
-                        <p># Region: ${data.region}</p>
-                        <p># Continent: ${data.continents}</p>
-                        <p># Currency: ${data.currencies}</p>
-                        <p># Language: ${data.languages}</p>
-                        <p># Borders: ${data.borders}</p>
-                        <p># Gini index: ${data.gini}</p>`                       
-    }  
-}
+    loading.innerHTML = 
+        `<p># Name: ${data[0].name.common}</p>
+        <p># Population: ${data[0].population.toLocaleString('pt-BR')}</p>
+        <p># Capital: ${data[0].capital}</p>
+        <p># Region: ${data[0].region}</p>
+        <p># Continent: ${data[0].continents}</p>
+        <p># Currency: ${data.currencies}</p>
+        <p># Language: ${data.languages}</p>
+        <p># Borders: ${data[0].borders}</p>
+        <p># Gini index: ${data.gini}</p>`
+}  
+    
 
 
+
+/* if(data.error) {
+    loading.innerText = "Country not found. Please make sure the country name is written in English."
+    loading.style.color = "red"
+} else {
+
+} */

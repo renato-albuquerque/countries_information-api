@@ -117,11 +117,12 @@ input::placeholder {
     color: #273142;
 }
 
-.buttonNewSearch {
+.buttonReset {
     margin-bottom: 6rem;
     padding: 1rem;
     border-radius: 1rem;
     font-size: 1.6rem;
+    font-weight: bold;
     background-color: #556270;
     color: whitesmoke;
 }
