@@ -17,7 +17,7 @@ body {
 
     width: 37.5rem;
     margin: 0 auto;
-    background-color: #e4a6917a;
+    background-color: #e4a6915e;
 }
 
 .container { /* Strategy to center all the elements. */
@@ -99,6 +99,7 @@ input::placeholder {
     border-radius: 1rem;
     font-size: 1.6rem;
     background-color: #556270;
+    cursor: pointer;
 }
 
 .fa-magnifying-glass {
@@ -127,6 +128,7 @@ input::placeholder {
     background-color: #556270;
     color: whitesmoke;
     width: 9rem;
+    cursor: pointer;
 }
 
 .footerNameJob {
