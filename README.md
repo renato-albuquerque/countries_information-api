@@ -26,8 +26,8 @@ Users should be able to:
 ### Screenshot
 
 #### Responsive Viewer
-![screenshot](assets/screencapture-countries-information-api-1.png)
-![screenshot](assets/screencapture-countries-information-api-2.png)
+![screenshot](assets/screencapture-01.png)
+![screenshot](assets/screencapture-02.png)
 
 ### Links
 
