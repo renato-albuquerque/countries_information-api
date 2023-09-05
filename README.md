@@ -26,12 +26,13 @@ Users should be able to:
 ### Screenshot
 
 #### Responsive Viewer
-![screenshot]()
+![screenshot](assets/screencapture-countries-information-api-1.png)
+![screenshot](assets/screencapture-countries-information-api-2.png)
 
 ### Links
 
-- [Solution URL here]()
-- [Live Site URL here]()
+- [Solution URL here](https://github.com/renato-albuquerque/countries_information-api)
+- [Live Site URL here](https://renato-albuquerque.github.io/countries_information-api/)
 
 ## My process
 
