@@ -21,7 +21,7 @@ async function searchCountry() {
 
 function showCountryInformation(data) {
     const loading = document.querySelector("#loading")
-    
+
     loading.innerHTML = 
         `<p># Name: ${data[0].name.common} / ${data[0].fifa}</p>
         <p># Population: ${data[0].population.toLocaleString('pt-BR')} people</p>
@@ -32,13 +32,15 @@ function showCountryInformation(data) {
         <p># Currency: ${JSON.stringify(data[0].currencies, null, 2)}</p>
         <p># Language: ${JSON.stringify(data[0].languages, null, 2)}</p>    
         <p># Borders: ${JSON.stringify(data[0].borders, null, 2)}</p>
-        <p># Gini index: ${JSON.stringify(data[0].gini, null, 2)}</p>` 
+        <p># Gini index: ${JSON.stringify(data[0].gini, null, 2)} (The closer to zero: the greater the income equality among the population.)</p>` 
 }  
     
 
 
 
-/* if(data.error) {
+/* Check.
+
+ if(data.error) {
     loading.innerText = "Country not found. Please make sure the country name is written in English."
     loading.style.color = "red"
 } else {
