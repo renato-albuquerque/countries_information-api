@@ -92,6 +92,7 @@ body {
 
 input::placeholder {
     color: #273142;
+    font-size: 1.25rem;
 }
 
 .button {
